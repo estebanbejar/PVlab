@@ -2,6 +2,10 @@
 
 Aplicación web independiente de GEOSOLAR. Integra el dashboard de módulo/string y el laboratorio de strings, stringboxes y cableado DC. No necesita MATLAB ni OCR.
 
+Web: https://estebanbejar.github.io/PVlab/
+
+GitHub Pages publica automáticamente `dist` al actualizar `main`, después de superar las pruebas del modelo y catálogo. El flujo también se puede ejecutar manualmente desde Actions.
+
 ## Uso local
 
 Desde esta carpeta: `python -m http.server 5181 --directory dist`. Abrir `http://localhost:5181` en un navegador moderno. No abrir index.html directamente: los módulos JavaScript y el worker requieren HTTP.
