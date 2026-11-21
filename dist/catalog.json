@@ -24,7 +24,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     },
     {
       "name": "JAM54S40-440/LR",
@@ -47,7 +49,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     },
     {
       "name": "JAM54S40-445/LR",
@@ -70,7 +74,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     },
     {
       "name": "JAM54S40-450/LR",
@@ -93,7 +99,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     },
     {
       "name": "JAM54S40-455/LR",
@@ -116,7 +124,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     },
     {
       "name": "JAM54S40-460/LR",
@@ -139,7 +149,9 @@
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
         "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
-      ]
+      ],
+      "layout": "half",
+      "cellCount": 108
     }
   ]
 }

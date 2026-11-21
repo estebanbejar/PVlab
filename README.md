@@ -6,6 +6,10 @@ Web: https://estebanbejar.github.io/PVlab/
 
 GitHub Pages publica automáticamente `dist` al actualizar `main`, después de superar las pruebas del modelo y catálogo. El flujo también se puede ejecutar manualmente desde Actions.
 
+El catálogo permite elegir células completas (36–96, pasos de 6) o partidas (72–192, pasos de 12), indicando siempre el número físico total. Los módulos nuevos del campo heredan estos datos; en «Módulos y sombras» se pueden sustituir por módulo. Se asumen seis columnas y tres grupos bypass, con dos ramas por grupo para partidas. El número de células afecta al modelo de sombras, mientras las curvas uniformes siguen ajustadas a los parámetros eléctricos de la ficha.
+
+Los JSON guardan `layout` (`full`/`half`) y `cellCount`. Los catálogos antiguos sin estos campos usan 108 partidas; los escenarios antiguos mantienen sus selecciones de 54 completas o 108 partidas. La deduplicación distingue también tipo y número de células. MATLAB puede ignorar estos campos adicionales; no se garantiza que conserve estos datos al volver a exportar.
+
 ## Uso local
 
 Desde esta carpeta: `python -m http.server 5181 --directory dist`. Abrir `http://localhost:5181` en un navegador moderno. No abrir index.html directamente: los módulos JavaScript y el worker requieren HTTP.
