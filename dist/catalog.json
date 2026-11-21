@@ -1,0 +1,145 @@
+{
+  "format": "pv-string-catalog",
+  "version": 1,
+  "coefficientUnits": "1/degC",
+  "modules": [
+    {
+      "name": "JAM54S40-435/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-435/LR",
+      "Pmp": 435,
+      "Voc": 38.7,
+      "Isc": 14.23,
+      "Vmp": 32.29,
+      "Imp": 13.47,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    },
+    {
+      "name": "JAM54S40-440/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-440/LR",
+      "Pmp": 440,
+      "Voc": 38.9,
+      "Isc": 14.31,
+      "Vmp": 32.47,
+      "Imp": 13.55,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    },
+    {
+      "name": "JAM54S40-445/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-445/LR",
+      "Pmp": 445,
+      "Voc": 39.1,
+      "Isc": 14.4,
+      "Vmp": 32.65,
+      "Imp": 13.63,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    },
+    {
+      "name": "JAM54S40-450/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-450/LR",
+      "Pmp": 450,
+      "Voc": 39.3,
+      "Isc": 14.48,
+      "Vmp": 32.82,
+      "Imp": 13.71,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    },
+    {
+      "name": "JAM54S40-455/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-455/LR",
+      "Pmp": 455,
+      "Voc": 39.5,
+      "Isc": 14.56,
+      "Vmp": 33,
+      "Imp": 13.79,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    },
+    {
+      "name": "JAM54S40-460/LR",
+      "brand": "JA Solar",
+      "model": "JAM54S40-460/LR",
+      "Pmp": 460,
+      "Voc": 39.7,
+      "Isc": 14.64,
+      "Vmp": 33.17,
+      "Imp": 13.87,
+      "alpha": 0.00045,
+      "beta": -0.0025,
+      "gamma": -0.0029,
+      "origin": [
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados",
+        "Ficha JA Solar JAM54S40 LR Global-EN-20240909A; datos revisados"
+      ]
+    }
+  ]
+}

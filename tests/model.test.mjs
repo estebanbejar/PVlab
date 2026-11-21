@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {moduleCurve,simpleString,fieldAnalysis,newField,newModule,geometry,randomFactors,irradianceGrid,cableR} from '../dist/physics.js';
+import {readCatalog,catalogFile,mergeCatalog,validateField} from '../dist/data.js';
+const catalog=readCatalog(JSON.parse(readFileSync(new URL('../dist/catalog.json',import.meta.url),'utf8'))),m=catalog[3];
+const near=(a,b,t)=>assert.ok(Math.abs(a-b)<t,`${a} != ${b}`);
+test('MATLAB module reference and series scaling',()=>{const c=moduleCurve(m,60,700);near(c.Pmp,278.70052663614894,1e-7);const s=simpleString(c,Array.from({length:10},()=>[1,1]));near(s.Pmp,10*c.Pmp,.02);near(s.Voc,10*c.Voc,1e-8);assert.equal(moduleCurve(m,25,0).Pmp,0);});
+test('MATLAB field reference and power balance',()=>{const r=fieldAnalysis(m,validateField(newField()));near(r.network.Pmp,13106.330704233,.2);near(r.op.residual,0,.1);assert.ok(r.op.wireLoss>0);});
+test('MATLAB partial shadow reference',()=>{const f=newField();f.strings=f.strings.slice(0,1);f.strings[0].modules=[newModule(),newModule()];f.strings[0].length=0;f.boxes[0].length=0;f.strings[0].modules[0].shadow=[0,0,1,.12];near(fieldAnalysis(m,f).network.Pmp,534.036764368,.15);});
+test('zero irradiation and ideal blocking',()=>{const f=newField();f.strings.forEach(s=>s.modules.forEach(d=>d.G=0));const r=fieldAnalysis(m,f);near(r.network.Pmp,0,1e-9);f.blocking=true;f.strings[0].modules.forEach(d=>d.G=1000);const b=fieldAnalysis(m,f);assert.ok(b.op.strings.every(s=>s.I>=0));near(b.op.residual,0,.2);});
+test('geometric shadow coverage preserves area',()=>{const d=newModule();d.shadow=[0,0,1,.12];near(geometry(d).cells.reduce((s,c)=>s+c.coverage*c.w*c.h,0),.12,1e-12);d.shape='triangle';d.shadow=[0,0,1,1];near(geometry(d).cells.reduce((s,c)=>s+c.coverage*c.w*c.h,0),.5,1e-12);});
+test('repeatable population and low-irradiance grid',()=>{assert.deepEqual(randomFactors(10,1,2,7),randomFactors(20,1,2,7).slice(0,10));const g=irradianceGrid();assert.deepEqual(g.slice(0,21),Array.from({length:21},(_,i)=>i));assert.deepEqual(g.slice(21,27),[25,30,35,40,45,50]);near(cableR(100,6,20),.678,1e-12);});
+test('catalog round trip, electrical deduplication and drafts',()=>{assert.deepEqual(readCatalog(catalogFile(catalog)),catalog);assert.equal(mergeCatalog(catalog,[{...m,brand:'Another label'}]).duplicates,1);assert.equal(mergeCatalog(catalog,[{...m,Voc:m.Voc+.1}]).modules.length,7);const draft={...m,Voc:null};assert.equal(mergeCatalog([draft],[draft]).modules.length,2);assert.throws(()=>readCatalog({...catalogFile(catalog),coefficientUnits:'%/degC'}));assert.throws(()=>readCatalog(catalogFile([{...m,Isc:'14'}])));});
+test('reject invalid field data',()=>{const f=newField();f.strings[0].box=4;assert.throws(()=>validateField(f));f.strings[0].box=0;f.strings[0].modules[0].T=-16;assert.throws(()=>validateField(f));});
